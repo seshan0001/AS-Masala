@@ -145,7 +145,7 @@ $(function(){
 
 
         $.ajax({
-            url: "/js/data.json",
+            url: "/AS-Masala/js/data.json",
             dataType: "json",
             success: function(data) {
                 const product = data.products.find(p => p.id == productId);
