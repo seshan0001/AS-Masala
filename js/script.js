@@ -154,6 +154,7 @@ $(function(){
                     //name,description,howtouse
                     $(".productTitle").text(product.name);
                     $(".productDesc").text(product.description);
+                    $(".paragraphDesc").text(product.paragraphDesc.replace(/\n/g, "<br>"));
                     $(".howtoUse").html(product.howtouse.replace(/\n/g, "<br>"));
                     
                     //quantity Btn

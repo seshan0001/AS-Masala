@@ -2,15 +2,16 @@
   "products": [
     {
       "id": "sambar",
-      "name": "Masala test Product",
+      "name": "Sambar Masala Powder",
       "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
       "price": [
-        { "id":0, "weight": "100 g", "old": "200₹", "new": "100₹" },
-        { "id":1, "weight": "250 g", "old": "250₹", "new": "200₹" },
-        { "id":2, "weight": "500 g", "old": "300₹", "new": "300₹" },
-        { "id":3, "weight": "1 kg", "old": "300₹", "new": "500₹"  }
+        { "id":0, "weight": "100 g", "old": "99₹", "new": "79₹" },
+        { "id":1, "weight": "250 g", "old": "239₹", "new": "199₹" },
+        { "id":2, "weight": "500 g", "old": "479₹", "new": "399₹" },
+        { "id":3, "weight": "1 kg", "old": "959₹", "new": "799₹" }
       ],
       "description": "Authentic spices from Tamil Nadu, India",
+      "paragraphDesc": "Give your chicken the authentic South Indian restaurant-style taste with our Homemade Chicken 65 Masala. Made from freshly ground spices, free from preservatives and artificial colors. Perfect for crispy, spicy, and flavorful Chicken 65 every time!",
       "ingredientsList": [
         "turmeric",
         "chilli",
@@ -20,36 +21,63 @@
     },
     {
       "id": "chicken-65",
-      "name": "Chicken 65 Masala",
-      "images": ["chicken65-1.png", "chicken65-2.png"],
-      "description": "Spicy blend for the perfect Chicken 65",
+      "name": "Chicken 65 Masala (சிக்கன் 65 மசாலா)",
+      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
       "price": [
-        { "weight": "50g", "cost": "0.8$" },
-        { "weight": "200g", "cost": "2.5$" },
-        { "weight": "1kg", "cost": "8$" }
-      ]
+        { "id":0, "weight": "100 g", "old": "119₹", "new": "99₹" },
+        { "id":1, "weight": "250 g", "old": "299₹", "new": "249₹" },
+        { "id":2, "weight": "500 g", "old": "599₹", "new": "499₹" },
+        { "id":3, "weight": "1 kg", "old": "1199₹", "new": "999₹"  }
+      ],
+      "description": "Give your chicken the authentic South Indian restaurant-style taste",
+      "paragraphDesc": "Give your chicken the authentic South Indian restaurant-style taste with our Homemade Chicken 65 Masala. Made from freshly ground spices, free from preservatives and artificial colors. Perfect for crispy, spicy, and flavorful Chicken 65 every time!",
+      "ingredientsList": [
+        "Red Chilli Powder",
+        "Pepper",
+        "Cumin Powder",
+        "Coriander powder",
+        "Salt",
+        "Corn flour powder"
+      ],
+      "howtouse": "Mix 100 gram of AS Chicken 65 masala with 1kg chicken add one egg and  add 25 gram of ginger garlic paste. Marinate chicken pieces for 30 minutes and deep fry till golden brown."
     },
     {
       "id": "rasam",
-      "name": "Coriander Powder",
-      "images": ["coriander1.png", "coriander2.png"],
-      "description": "Ground coriander seeds with rich aroma",
+      "name": "Rasam Powder ( ரசம் பொடி )",
+      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
       "price": [
-        { "weight": "100g", "cost": "1.2$" },
-        { "weight": "500g", "cost": "4$" },
-        { "weight": "1kg", "cost": "7$" }
-      ]
+        { "id":0, "weight": "100 g", "old": "150₹", "new": "125₹" },
+        { "id":1, "weight": "250 g", "old": "372₹", "new": "310₹" },
+        { "id":2, "weight": "500 g", "old": "700₹", "new": "625₹" },
+        { "id":3, "weight": "1 kg", "old": "1500₹", "new": "1250₹" }
+      ],
+      "description": "Authentic spices from Tamil Nadu, India",
+      "paragraphDesc": "Give your chicken the authentic South Indian restaurant-style taste with our Homemade Chicken 65 Masala. Made from freshly ground spices, free from preservatives and artificial colors. Perfect for crispy, spicy, and flavorful Chicken 65 every time!",
+      "ingredientsList": [
+        "turmeric",
+        "chilli",
+        "jghjgajdgjgdjgdg"
+      ],
+      "howtouse": "Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65 \n test"
     },
     {
-      "id": "kulambu",
-      "name": "Coriander Powder",
-      "images": ["coriander1.png", "coriander2.png"],
-      "description": "Ground coriander seeds with rich aroma",
+      "id": "kuzhambu",
+      "name": "Kuzhambu Powder ( குழம்பு பொடி )",
+      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
       "price": [
-        { "weight": "100g", "cost": "1.2$" },
-        { "weight": "500g", "cost": "4$" },
-        { "weight": "1kg", "cost": "7$" }
-      ]
+        { "id":0, "weight": "100 g", "old": "49₹", "new": "39₹" },
+        { "id":1, "weight": "250 g", "old": "119₹", "new": "99₹" },
+        { "id":2, "weight": "500 g", "old": "239₹", "new": "199₹" },
+        { "id":3, "weight": "1 kg", "old": "479₹", "new": "399₹" }
+      ],
+      "description": "Authentic spices from Tamil Nadu, India",
+      "paragraphDesc": "Give your chicken the authentic South Indian restaurant-style taste with our Homemade Chicken 65 Masala. Made from freshly ground spices, free from preservatives and artificial colors. Perfect for crispy, spicy, and flavorful Chicken 65 every time!",
+      "ingredientsList": [
+        "turmeric",
+        "chilli",
+        "jghjgajdgjgdjgdg"
+      ],
+      "howtouse": "Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65 \n test"
     }
   ]
 }
