@@ -188,8 +188,8 @@ $(function(){
                     $(".viewProductPageTopImgSec").empty();
                     $(".PreviewImgWrap").empty();
                     product.images.forEach(function(ele){
-                        var mainImg = `<img class="viewProductPageTopImg swiper-slide" src="/AS-Masala/css/assets/${ele}" ></img>`;
-                        var previewImg = `<img class="PreviewImg swiper-slide" src="/AS-Masala/css/assets/${ele}" ></img>`;
+                        var mainImg = `<img class="viewProductPageTopImg swiper-slide" src="/AS-Masala/images/${ele}" ></img>`;
+                        var previewImg = `<img class="PreviewImg swiper-slide" src="/AS-Masala/images/${ele}" ></img>`;
 
                         $(".viewProductPageTopImgSec").append(mainImg);
                         $(".PreviewImgWrap").append(previewImg);
