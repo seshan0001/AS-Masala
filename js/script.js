@@ -9,12 +9,15 @@ $(function(){
     }
 
     $("body").on("click",".burgerMenu",function(){
-
+        $("html").toggleClass("mobileMenuOpen");
+        $(".mobileMenuWrap").slideToggle();
     });
     
     $(".content").css("margin-top",$(".header").outerHeight());
+    $(".mobileMenuWrap").css("top",$(".header").outerHeight());
     $(window).on("resize",function(){
         $(".content").css("margin-top",$(".header").outerHeight());
+        $(".mobileMenuWrap").css("top",$(".header").outerHeight());
     });
 
     new WOW().init();
