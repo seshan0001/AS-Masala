@@ -3,7 +3,7 @@
     {
       "id": "sambar",
       "name": "Sambar Masala Powder",
-      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
+      "images": ["sambar_masala01.png", "sambar_masala02.png", "sambar_masala03.png", "sambar_masala04.png", "sambar_masala05.png"],
       "price": [
         { "id":0, "weight": "100 g", "old": "99₹", "new": "79₹" },
         { "id":1, "weight": "250 g", "old": "239₹", "new": "199₹" },
@@ -22,7 +22,7 @@
     {
       "id": "chicken-65",
       "name": "Chicken 65 Masala (சிக்கன் 65 மசாலா)",
-      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
+      "images": ["chicken_masala01.png", "chicken_masala02.png", "chicken_masala03.png", "chicken_masala04.png", "chicken_masala05.png"],
       "price": [
         { "id":0, "weight": "100 g", "old": "119₹", "new": "99₹" },
         { "id":1, "weight": "250 g", "old": "299₹", "new": "249₹" },
@@ -44,7 +44,7 @@
     {
       "id": "rasam",
       "name": "Rasam Powder ( ரசம் பொடி )",
-      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
+      "images": ["rasam_masala01.png", "rasam_masala02.png", "rasam_masala03.png", "rasam_masala04.png", "rasam_masala05.png"],
       "price": [
         { "id":0, "weight": "100 g", "old": "150₹", "new": "125₹" },
         { "id":1, "weight": "250 g", "old": "372₹", "new": "310₹" },
@@ -63,7 +63,7 @@
     {
       "id": "kuzhambu",
       "name": "Kuzhambu Powder ( குழம்பு பொடி )",
-      "images": ["sambar.png", "test.png", "sambar.png", "sambar.png", "sambar.png"],
+      "images": ["kulambu_masala01.png", "kulambu_masala02.png", "kulambu_masala03.png", "kulambu_masala04.png", "kulambu_masala05.png"],
       "price": [
         { "id":0, "weight": "100 g", "old": "49₹", "new": "39₹" },
         { "id":1, "weight": "250 g", "old": "119₹", "new": "99₹" },
