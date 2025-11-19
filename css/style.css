@@ -651,6 +651,53 @@ a.headerMenuItem:hover {
     margin-top: 20px;
 }
 
+/* Mobile Menu */
+
+.mobileMenuWrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: var(--merun);
+    border-top: 1px solid var(--lightWhite);
+    border-bottom: 1px solid var(--lightWhite);
+    transition: top 0.4s;
+    z-index: 99;
+    display: none;
+}
+
+.mobileMenuContent,
+.mobileMenuLists {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.mobileMenuLists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobileMenuOpen .burgerMenu {
+    display: block;
+}
+
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(2){
+    display: none;
+}
+
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(1){
+    transform: rotateZ(45deg);
+    bottom: -3px;
+    position: relative;
+}
+
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(3){
+    transform: rotateZ(-45deg);
+    position: absolute;
+}
 
 /* Responsive */
 
@@ -983,10 +1030,6 @@ a.headerMenuItem:hover {
         font-size: 32px;
     }
 
-    .headerTitleWrap {
-        width: min-content;
-    }
-
     /* View Page */
     .viewProductPageHeader {
         flex-direction: column;
@@ -1004,6 +1047,12 @@ a.headerMenuItem:hover {
     .viewProductPageInfoWrap {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (min-width:860px) {
+    .mobileMenuOpen .mobileMenuWrap {
+        display: none !important;
     }
 }
 
@@ -1166,6 +1215,11 @@ a.headerMenuItem:hover {
 }
 
 @media (max-width:540px) {
+
+    .c {
+        padding: 0 25px;
+    }
+
     .bigTitle {
         font-size: 40px;
     }
@@ -1186,6 +1240,10 @@ a.headerMenuItem:hover {
         font-size: 16px;
     }
 
+    .headerTitle {
+        font-size: 24px;
+    }
+
     .subTitle {
         font-size: 20px;
     }
@@ -1193,8 +1251,62 @@ a.headerMenuItem:hover {
     .textWithImageWrap {
         gap: 30px;
     }
+
+    .headerLogo {
+        width: 80px;
+    }
+
+    .headerWrap {
+        gap: 0;
+    }
+
+    .mobileMenuContent, 
+    .mobileMenuLists {
+        padding: 16px;
+    }
+
+    .burgerMenu {
+        gap: 5px;
+    }
+
+    .span.menuLine {
+        width: 24px;
+        height: 2.5px;
+    }
 }
 
 @media (max-width:420px) {
-    
+
+    .c {
+        padding: 0 20px;
+    }
+
+    .headerLogo {
+        width: 65px;
+    }
+
+    .headerTitle {
+        font-size: 22px;
+    }
+
+    .mobileMenuContent, 
+    .mobileMenuLists {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .c {
+        padding: 0 16px;
+    }
+
+    .headerTitle {
+        font-size: 20px;
+    }
+
+    .headerLogo {
+        width: 55px;
+    }
+
 }
