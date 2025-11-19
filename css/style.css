@@ -283,7 +283,7 @@ a.headerMenuItem:hover {
 
 .bannerImageWrap img {
     height: 80vh;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .logoWrap {
@@ -467,6 +467,7 @@ a.headerMenuItem:hover {
 
 .viewProductPageTopImg {
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .viewProductPageTopImg:hover {
@@ -477,7 +478,7 @@ a.headerMenuItem:hover {
 .PreviewImg {
     width: 80px;
     border: 3px solid transparent;
-    object-fit: cover;
+    object-fit: contain;
     height: auto;
     transition: all .4s;
     opacity: 0.6;
@@ -500,7 +501,13 @@ a.headerMenuItem:hover {
 
 .viewProductPageTopImgWrap {
     max-width: 400px;
-    height: auto;
+    height: 400px;
+    object-fit: contain;
+}
+
+.viewProductPageTopImgSec {
+    display: flex;
+    align-items: center;
 }
 
 .productPrice {
@@ -698,6 +705,19 @@ a.headerMenuItem:hover {
     transform: rotateZ(-45deg);
     position: absolute;
 }
+
+/* Image resize */
+
+.imgcol {
+    text-align: center;
+}
+
+.imgcol img {
+    height: 350px;
+    width: auto;
+}
+
+
 
 /* Responsive */
 
