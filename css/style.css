@@ -1293,6 +1293,10 @@ a.headerMenuItem:hover {
         width: 24px;
         height: 2.5px;
     }
+
+    .bannerImageWrap img{ 
+        height: 250px;
+    }
 }
 
 @media (max-width:420px) {

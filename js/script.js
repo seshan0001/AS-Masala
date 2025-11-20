@@ -58,7 +58,7 @@ $(function(){
     }
 
     function thumPreview() {
-        settimeout(function(){
+        setTimeout(function(){
             $(".PreviewImgWrapContent").css("width", $(".viewProductPageTopImg").width());
         },100)
         var thumbSwiper = new Swiper("#previewImgSlider", {
