@@ -282,8 +282,9 @@ a.headerMenuItem:hover {
 }
 
 .bannerImageWrap img {
-    height: 80vh;
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .logoWrap {
@@ -1295,8 +1296,14 @@ a.headerMenuItem:hover {
     }
 
     .bannerImageWrap img{ 
-        height: 250px;
+        height: auto;
+        object-fit: contain;
     }
+
+    .imgcol img {
+    height: 200px;
+    width: auto;
+}
 }
 
 @media (max-width:420px) {
