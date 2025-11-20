@@ -309,8 +309,12 @@ a.headerMenuItem:hover {
 
 .CarouselSliderCard {
     gap: 15px;
-    background-color: var(--merun);
     color: var(--lightWhite);
+}
+ 
+.CarouselSliderCardImag img {
+    height: 400PX;
+    object-fit: contain;
 }
 
 .carouselTextWrap {
