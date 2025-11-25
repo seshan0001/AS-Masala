@@ -257,7 +257,6 @@ a.headerMenuItem:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
 }
 
 .logoSlide {
@@ -399,9 +398,11 @@ a.headerMenuItem:hover {
 /* Offer Banner */
 
 .offerBannerImgWrap {
-    position: relative;
-    height: 350px;
-    width: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .offerBannerImgWrap img {
@@ -426,13 +427,14 @@ a.headerMenuItem:hover {
 }
 
 .offerBannerTextWrap {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 0;
     z-index: 5;
     width: 100%;
     height: auto;
     color: var(--lightWhite);
+    padding: 50px 0;
 }
 
 .offerBannerTextWrap .headerTitle {

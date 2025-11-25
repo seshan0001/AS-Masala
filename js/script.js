@@ -67,14 +67,14 @@ $(function(){
             freeMode: true,
             watchSlidesProgress: true,
             autoplay: {
-                delay: 2000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
         });
         var mainSwiper = new Swiper("#viewImgSlider", {
             slidesPerView: 1,
             autoplay: {
-                delay: 2000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             thumbs: {
