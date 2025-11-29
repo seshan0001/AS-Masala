@@ -1,6 +1,6 @@
 /*!
- * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Font Awesome Free 6.7.2 by @fontAwesome - https://fontAwesome.com
+ * License - https://fontAwesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2024 Fonticons, Inc.
  */
  .fa {
@@ -7854,8 +7854,8 @@ readers do not read off random characters that represent icons */
    font-style: normal;
    font-weight: 400;
    font-display: block;
-   src: url("fonts/FontAwesome/fa-brands-400.eot");
-   src: url("fonts/FontAwesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("fonts/FontAwesome/fa-brands-400.woff2") format("woff2"), url("fonts/FontAwesome/fa-brands-400.woff") format("woff"), url("fonts/FontAwesome/fa-brands-400.ttf") format("truetype"), url("fonts/FontAwesome/fa-brands-400.svg#fontawesome") format("svg"); }
+   src: url("fonts/fontAwesome/fa-brands-400.eot");
+   src: url("fonts/fontAwesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("fonts/fontAwesome/fa-brands-400.woff2") format("woff2"), url("fonts/fontAwesome/fa-brands-400.woff") format("woff"), url("fonts/fontAwesome/fa-brands-400.ttf") format("truetype"), url("fonts/fontAwesome/fa-brands-400.svg#fontAwesome") format("svg"); }
  
  .fab {
    font-family: 'FontAwesome';
@@ -7865,8 +7865,8 @@ readers do not read off random characters that represent icons */
    font-style: normal;
    font-weight: 400;
    font-display: block;
-   src: url("fonts/FontAwesome/fa-regular.eot");
-   src: url("fonts/FontAwesome/fa-regular.eot?#iefix") format("embedded-opentype"), url("fonts/FontAwesome/fa-regular.woff2") format("woff2"), url("fonts/FontAwesome/fa-regular.woff") format("woff"), url("fonts/FontAwesome/fa-regular.ttf") format("truetype"), url("fonts/FontAwesome/fa-regular.svg#fontawesome") format("svg"); }
+   src: url("fonts/fontAwesome/fa-regular.eot");
+   src: url("fonts/fontAwesome/fa-regular.eot?#iefix") format("embedded-opentype"), url("fonts/fontAwesome/fa-regular.woff2") format("woff2"), url("fonts/fontAwesome/fa-regular.woff") format("woff"), url("fonts/fontAwesome/fa-regular.ttf") format("truetype"), url("fonts/fontAwesome/fa-regular.svg#fontAwesome") format("svg"); }
  
  .far {
    font-family: 'FontAwesome';
@@ -7876,8 +7876,8 @@ readers do not read off random characters that represent icons */
    font-style: normal;
    font-weight: 900;
    font-display: block;
-   src: url("fonts/FontAwesome/fa-solid-900.eot");
-   src: url("fonts/FontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("fonts/FontAwesome/fa-solid-900.woff2") format("woff2"), url("fonts/FontAwesome/fa-solid-900.woff") format("woff"), url("fonts/FontAwesome/fa-solid-900.ttf") format("truetype"), url("fonts/FontAwesome/fa-solid-900.svg#fontawesome") format("svg"); }
+   src: url("fonts/fontAwesome/fa-solid-900.eot");
+   src: url("fonts/fontAwesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("fonts/fontAwesome/fa-solid-900.woff2") format("woff2"), url("fonts/fontAwesome/fa-solid-900.woff") format("woff"), url("fonts/fontAwesome/fa-solid-900.ttf") format("truetype"), url("fonts/fontAwesome/fa-solid-900.svg#fontAwesome") format("svg"); }
  
  .fa,
  .fas {
