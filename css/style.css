@@ -809,13 +809,13 @@ a.headerMenuItem:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     z-index: 999;
     right: 20px;
     bottom: 100px;
-    background-color: var(--merun);
+    background-color: #25d366;
     border-radius: 50%;
 }
 
