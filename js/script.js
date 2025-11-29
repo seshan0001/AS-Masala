@@ -156,11 +156,11 @@ $(function(){
                 const product = data.products.find(p => p.id == productId);
                 if (product) {
 
-                    //name,description,howtouse
+                    //name,description,recipe
                     $(".productTitle").text(product.name);
                     $(".productDesc").text(product.description);
                     $(".paragraphDesc").text(product.paragraphDesc.replace(/\n/g, "<br>"));
-                    $(".howtoUse").html(product.howtouse.replace(/\n/g, "<br>"));
+                    $(".recipe").html(product.recipe.replace(/\n/g, "<br>"));
                     
                     //quantity Btn
                     $(".productQuantityBtnWrap").empty();
