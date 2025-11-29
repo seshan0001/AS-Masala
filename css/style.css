@@ -744,6 +744,10 @@ a.headerMenuItem:hover {
 
 /* Product Listing Cards */
 
+.productsListing {
+    overflow: hidden;
+}
+
 .productListingPageContent,
 .productSinlePageContent {
     display: none;
@@ -757,12 +761,13 @@ a.headerMenuItem:hover {
 }
 
 .productCardWrap {
-    width: 33.33%;
+    width: 25%;
     padding: 0 40px;
 }
 
 .productCard {
     width: 100%;
+    height: 100%;
     background: var(--lightWhite);
     border-radius: 15px;
     overflow: hidden;
@@ -794,10 +799,8 @@ a.headerMenuItem:hover {
     padding: 20px;
     display: flex;
     flex-direction: column;
-}
-
-.productCardsWrap {
-    overflow: hidden;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* WhatsApp Logo Btn */
@@ -821,6 +824,20 @@ a.headerMenuItem:hover {
 }
 
 /* Responsive */
+
+@media (max-width: 1600px) {
+
+    .productCardsWrap {
+        row-gap: 60px;
+        margin: 0 -30px;
+    }
+
+    .productCardWrap {
+        width: 33.33%;
+        padding: 0 30px;
+    }
+}
+
 
 @media (max-width:1400px) {
 
@@ -874,6 +891,15 @@ a.headerMenuItem:hover {
 
     .size25 {
         font-size: 22px;
+    }
+
+    .productCardsWrap {
+        row-gap: 50px;
+        margin: 0 -25px;
+    }
+
+    .productCardWrap {
+        padding: 0 25px;
     }
 
 }
@@ -938,6 +964,16 @@ a.headerMenuItem:hover {
 
     .offerBannerTextWrap {
         min-height: 325px;
+    }
+
+    .productCardsWrap {
+        row-gap: 40px;
+        margin: 0 -20px;
+    }
+
+    .productCardWrap {
+        width: 50%;
+        padding: 0 20px;
     }
 
 }
@@ -1022,6 +1058,15 @@ a.headerMenuItem:hover {
 
     .offerBannerTextWrap {
         min-height: 300px;
+    }
+
+    .productCardsWrap {
+        row-gap: 30px;
+        margin: 0 -15px;
+    }
+
+    .productCardWrap {
+        padding: 0 15px;
     }
 
 }
@@ -1138,6 +1183,15 @@ a.headerMenuItem:hover {
     .offerBannerTextWrap {
         min-height: 250px;
     }
+
+    .productCardsWrap {
+        row-gap: 20px;
+        margin: 0 -10px;
+    }
+
+    .productCardWrap {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width:860px) {
@@ -1185,6 +1239,16 @@ a.headerMenuItem:hover {
     .viewProductPageInfoWrap {
         display: flex;
         flex-direction: column;
+    }
+
+    .productCardsWrap {
+        row-gap: 30px;
+        margin: 0;
+    }
+
+    .productCardWrap {
+        width: 100%;
+        padding: 0;
     }
 
 }
