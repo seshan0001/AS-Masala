@@ -1,5 +1,5 @@
 :root {
-    --lightWhite : #fcedd1;
+    --lightWhite: #fcedd1;
     --merun: #781d18;
     --brown: #482603;
     --gray: #DCC5B2;
@@ -16,15 +16,15 @@
 }
 
 .sansita-regular {
-  font-family: "Sansita", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nunito-regular {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -34,7 +34,8 @@
     margin: auto;
 }
 
-.pRel {
+.pRel,
+.content {
     position: relative;
 }
 
@@ -68,7 +69,6 @@
 }
 
 .headerWrap {
-    padding: 5px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,11 +81,11 @@ img {
 }
 
 .headerLogoWrap {
-    width: 15%;
+    padding: 8px 0;
 }
 
 .headerLogo {
-    width: 120px;
+    width: 100px;
     height: auto;
 }
 
@@ -105,6 +105,7 @@ img {
 
 .burgerMenuWrap {
     display: none;
+    padding: 10px 0 10px 10px;
 }
 
 span.menuLine {
@@ -191,7 +192,7 @@ a.headerMenuItem:hover {
     background-color: var(--lightWhite);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 8px;
 }
@@ -211,6 +212,7 @@ a.headerMenuItem:hover {
 
 .subTitle {
     font-size: 24px;
+    font-weight: 600;
 }
 
 .text {
@@ -310,7 +312,7 @@ a.headerMenuItem:hover {
     gap: 15px;
     color: var(--lightWhite);
 }
- 
+
 .CarouselSliderCardImag img {
     height: 400PX;
     object-fit: contain;
@@ -340,8 +342,15 @@ a.headerMenuItem:hover {
 .footerCol {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 25%;
     gap: 20px;
+    padding-right: 10px;
+    border-right: 1.5px solid var(--lightWhite) ;
+}
+
+.footerCol.col4 {
+    border: none;
 }
 
 .footerCol a {
@@ -351,7 +360,7 @@ a.headerMenuItem:hover {
 }
 
 .footerCol a i {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footerCol a:hover {
@@ -363,7 +372,7 @@ a.headerMenuItem:hover {
 }
 
 .footerColLogoWrap img {
-    width: 200px;
+    width: 165px;
     height: auto;
 }
 
@@ -377,8 +386,7 @@ a.headerMenuItem:hover {
     align-items: baseline;
     gap: 20px;
     justify-content: space-between;
-    padding:0 50px 25px;
-    margin-top: 15px;
+    padding: 20px 0;
     max-width: 1600px;
     margin: auto;
 }
@@ -387,9 +395,10 @@ a.headerMenuItem:hover {
     display: flex;
     gap: 20px;
     background: var(--lightWhite);
-    padding: 10px 15px;
+    padding: 8px;
     border-radius: 15px;
 }
+
 .footerLogos img {
     width: 80px;
     height: auto;
@@ -435,6 +444,11 @@ a.headerMenuItem:hover {
     height: auto;
     color: var(--lightWhite);
     padding: 50px 0;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .offerBannerTextWrap .headerTitle {
@@ -451,11 +465,12 @@ a.headerMenuItem:hover {
 .viewProductPageHeader {
     display: flex;
     flex-wrap: wrap;
-} 
+}
 
 .viewProductPageImgSec {
     width: 60%;
 }
+
 .viewProductPageInfoSec {
     width: 40%;
 }
@@ -579,13 +594,14 @@ a.headerMenuItem:hover {
     padding-left: 15px;
 }
 
-.newPrice,.oldPrice {
+.newPrice,
+.oldPrice {
     opacity: 1;
     transition: all 0.4s;
     transform: scale(1);
 }
 
-.newPrice.hide, 
+.newPrice.hide,
 .oldPrice.hide {
     opacity: 0;
     transform: scale(.5);
@@ -607,12 +623,13 @@ a.headerMenuItem:hover {
 }
 
 @keyframes pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
 
 /* Shipping Page */
@@ -698,17 +715,17 @@ a.headerMenuItem:hover {
     display: block;
 }
 
-.mobileMenuOpen .burgerMenu .menuLine:nth-child(2){
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(2) {
     display: none;
 }
 
-.mobileMenuOpen .burgerMenu .menuLine:nth-child(1){
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(1) {
     transform: rotateZ(45deg);
     bottom: -3px;
     position: relative;
 }
 
-.mobileMenuOpen .burgerMenu .menuLine:nth-child(3){
+.mobileMenuOpen .burgerMenu .menuLine:nth-child(3) {
     transform: rotateZ(-45deg);
     position: absolute;
 }
@@ -725,11 +742,88 @@ a.headerMenuItem:hover {
 }
 
 
+/* Product Listing Cards */
+
+.productListingPageContent,
+.productSinlePageContent {
+    display: none;
+}
+
+.productCardsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    margin: 0 -40px;
+}
+
+.productCardWrap {
+    width: 33.33%;
+    padding: 0 40px;
+}
+
+.productCard {
+    width: 100%;
+    background: var(--lightWhite);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px;
+}
+
+.productCardImg {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+}
+
+.productCardImg img {
+    width: auto;
+    height: 240px;
+    object-fit: contain;
+}
+
+.productCardContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productCardsWrap {
+    overflow: hidden;
+}
+
+/* WhatsApp Logo Btn */
+
+.whatsappLogoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 100px;
+    background-color: var(--merun);
+    border-radius: 50%;
+}
+
+.whatsappLogoBtn .icon {
+    font-size: 30px;
+}
 
 /* Responsive */
 
 @media (max-width:1400px) {
-    
+
     .c {
         padding: 0 70px;
     }
@@ -842,6 +936,10 @@ a.headerMenuItem:hover {
         gap: 40px;
     }
 
+    .offerBannerTextWrap {
+        min-height: 325px;
+    }
+
 }
 
 @media (max-width:1024px) {
@@ -921,6 +1019,11 @@ a.headerMenuItem:hover {
     .headerTitle {
         font-size: 42px;
     }
+
+    .offerBannerTextWrap {
+        min-height: 300px;
+    }
+
 }
 
 @media (max-width:950px) {
@@ -1018,6 +1121,23 @@ a.headerMenuItem:hover {
     .footerRow {
         gap: 20px;
     }
+
+    .footerRow {
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+
+    .footerCol {
+        width: 48%;
+    }
+
+    .footerCol.footerCol2 {
+        border: none;
+    }
+
+    .offerBannerTextWrap {
+        min-height: 250px;
+    }
 }
 
 @media (max-width:860px) {
@@ -1040,17 +1160,8 @@ a.headerMenuItem:hover {
 
     /* Footer */
 
-    .footerRow {
-        flex-wrap: wrap;
-        row-gap: 35px;
-    }
-
-    .footerCol {
-        width: 48%;
-    }
-
     .footerColLogoWrap img {
-        width: 180px;
+        width: 140px;
     }
 
     .headerTitle {
@@ -1060,7 +1171,7 @@ a.headerMenuItem:hover {
     /* View Page */
     .viewProductPageHeader {
         flex-direction: column;
-        gap: 30px ;
+        gap: 30px;
     }
 
     .viewProductPageImgSec {
@@ -1075,6 +1186,7 @@ a.headerMenuItem:hover {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 @media (min-width:860px) {
@@ -1166,7 +1278,8 @@ a.headerMenuItem:hover {
         flex-direction: column;
     }
 
-    .textcol, .imgcol {
+    .textcol,
+    .imgcol {
         width: 100%;
     }
 
@@ -1191,7 +1304,7 @@ a.headerMenuItem:hover {
     }
 
     .footerColLogoWrap img {
-        width: 160px;
+        width: 120px;
     }
 
     .footerCol:after {
@@ -1238,6 +1351,10 @@ a.headerMenuItem:hover {
 
     .footerCopyRightsText {
         font-size: 10px;
+    }
+
+    .footerCol {
+        border: none;
     }
 }
 
@@ -1287,7 +1404,7 @@ a.headerMenuItem:hover {
         gap: 0;
     }
 
-    .mobileMenuContent, 
+    .mobileMenuContent,
     .mobileMenuLists {
         padding: 16px;
     }
@@ -1301,15 +1418,15 @@ a.headerMenuItem:hover {
         height: 2.5px;
     }
 
-    .bannerImageWrap img{ 
+    .bannerImageWrap img {
         height: auto;
         object-fit: contain;
     }
 
     .imgcol img {
-    height: 200px;
-    width: auto;
-}
+        height: 200px;
+        width: auto;
+    }
 }
 
 @media (max-width:420px) {
@@ -1326,7 +1443,7 @@ a.headerMenuItem:hover {
         font-size: 22px;
     }
 
-    .mobileMenuContent, 
+    .mobileMenuContent,
     .mobileMenuLists {
         padding: 12px;
     }
@@ -1346,4 +1463,26 @@ a.headerMenuItem:hover {
         width: 55px;
     }
 
+}
+
+@media (max-width: 300px) {
+    header .c {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .headerTitleWrap {
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translateX(-50%);
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    header {
+        position: relative;
+    }
 }

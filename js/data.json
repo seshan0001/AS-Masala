@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "sambar",
+      "id": 1,
       "name": "Sambar Masala Powder",
       "images": [
         "sambar_masala01.png",
@@ -22,7 +22,7 @@
       "recipe": "Clean and cut 1 kg of chicken into medium-sized pieces. Mix the chicken with 100g of our A.S Chicken 65 Masala, add one egg, 2. add 25g ginger garlic paste.Let it marinate for 30 minutes.\nHeat edible oil in a pan. then fry the marinated chicken pieces on low flame until they turn crispy and golden brown. Hot and tasty Chicken 65 is now ready to serve"
     },
     {
-      "id": "chicken-65",
+      "id": 2,
       "name": "Chicken 65 Masala (சிக்கன் 65 மசாலா)",
       "images": [
         "chicken_masala01.png",
@@ -43,7 +43,7 @@
       "recipe": "Clean and cut 1 kg of chicken into medium-sized pieces. Mix the chicken with 100g of our A.S Chicken 65 Masala, add one egg, 2. add 25g ginger garlic paste.Let it marinate for 30 minutes.\nHeat edible oil in a pan. then fry the marinated chicken pieces on low flame until they turn crispy and golden brown. Hot and tasty Chicken 65 is now ready to serve"
     },
     {
-      "id": "rasam",
+      "id": 3,
       "name": "Rasam Powder ( ரசம் பொடி )",
       "images": [
         "rasam_masala01.png",
@@ -64,7 +64,7 @@
       "recipe": "Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65Spicy blend for the perfect Chicken 65 \n test"
     },
     {
-      "id": "kuzhambu",
+      "id": 4,
       "name": "Kuzhambu Powder ( குழம்பு பொடி )",
       "images": [
         "kulambu_masala01.png",

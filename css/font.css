@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Bold.eot');
+    src: url('fonts/Nunito/Nunito-Bold.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Nunito/Nunito-Bold.woff2') format('woff2'),
+        url('fonts/Nunito/Nunito-Bold.woff') format('woff'),
+        url('fonts/Nunito/Nunito-Bold.ttf') format('truetype'),
+        url('fonts/Nunito/Nunito-Bold.svg#false') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Medium.eot');
+    src: url('fonts/Nunito/Nunito-Medium.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Nunito/Nunito-Medium.woff2') format('woff2'),
+        url('fonts/Nunito/Nunito-Medium.woff') format('woff'),
+        url('fonts/Nunito/Nunito-Medium.ttf') format('truetype'),
+        url('fonts/Nunito/Nunito-Medium.svg#false') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Italic.eot');
+    src: url('fonts/Nunito/Nunito-Italic.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Nunito/Nunito-Italic.woff2') format('woff2'),
+        url('fonts/Nunito/Nunito-Italic.woff') format('woff'),
+        url('fonts/Nunito/Nunito-Italic.ttf') format('truetype'),
+        url('fonts/Nunito/Nunito-Italic.svg#false') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Regular.eot');
+    src: url('fonts/Nunito/Nunito-Regular.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Nunito/Nunito-Regular.woff2') format('woff2'),
+        url('fonts/Nunito/Nunito-Regular.woff') format('woff'),
+        url('fonts/Nunito/Nunito-Regular.ttf') format('truetype'),
+        url('fonts/Nunito/Nunito-Regular.svg#false') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('fonts/Sansita/Sansita-Bold.eot');
+    src: url('fonts/Sansita/Sansita-Bold.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Sansita/Sansita-Bold.woff2') format('woff2'),
+        url('fonts/Sansita/Sansita-Bold.woff') format('woff'),
+        url('fonts/Sansita/Sansita-Bold.ttf') format('truetype'),
+        url('fonts/Sansita/Sansita-Bold.svg#false') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('fonts/Sansita/Sansita-Medium.eot');
+    src: url('fonts/Sansita/Sansita-Medium.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Sansita/Sansita-Medium.woff2') format('woff2'),
+        url('fonts/Sansita/Sansita-Medium.woff') format('woff'),
+        url('fonts/Sansita/Sansita-Medium.ttf') format('truetype'),
+        url('fonts/Sansita/Sansita-Medium.svg#false') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('fonts/Sansita/Sansita-Italic.eot');
+    src: url('fonts/Sansita/Sansita-Italic.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Sansita/Sansita-Italic.woff2') format('woff2'),
+        url('fonts/Sansita/Sansita-Italic.woff') format('woff'),
+        url('fonts/Sansita/Sansita-Italic.ttf') format('truetype'),
+        url('fonts/Sansita/Sansita-Italic.svg#false') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('fonts/Sansita/Sansita-Regular.eot');
+    src: url('fonts/Sansita/Sansita-Regular.eot/?#iefix') format('embedded-opentype'),
+        url('fonts/Sansita/Sansita-Regular.woff2') format('woff2'),
+        url('fonts/Sansita/Sansita-Regular.woff') format('woff'),
+        url('fonts/Sansita/Sansita-Regular.ttf') format('truetype'),
+        url('fonts/Sansita/Sansita-Regular.svg#false') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

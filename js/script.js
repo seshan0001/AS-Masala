@@ -1,23 +1,32 @@
-$(function(){
+$(function () {
 
-    if($('#bannerSwiper').length) {
+    if ($('#bannerSwiper').length) {
         bannerSlider();
     }
 
-    if($('#CarouselSlider').length) {
+    if ($('#CarouselSlider').length) {
         CarouselSlider();
     }
 
-    $("body").on("click",".burgerMenu",function(){
+    if ($('#viewPage').length) {
+        const productId = getUrlParam("product");
+        if (productId) {
+            $(".productSinlePageContent").show();
+        } else {
+            $(".productListingPageContent").show();
+        }
+    }
+
+    $("body").on("click", ".burgerMenuWrap", function () {
         $("html").toggleClass("mobileMenuOpen");
         $(".mobileMenuWrap").slideToggle();
     });
-    
-    $(".content").css("margin-top",$(".header").outerHeight());
-    $(".mobileMenuWrap").css("top",$(".header").outerHeight());
-    $(window).on("resize",function(){
-        $(".content").css("margin-top",$(".header").outerHeight());
-        $(".mobileMenuWrap").css("top",$(".header").outerHeight());
+
+    $(".content").css("margin-top", $(".header").outerHeight());
+    $(".mobileMenuWrap").css("top", $(".header").outerHeight());
+    $(window).on("resize", function () {
+        $(".content").css("margin-top", $(".header").outerHeight());
+        $(".mobileMenuWrap").css("top", $(".header").outerHeight());
     });
 
     new WOW().init();
@@ -36,7 +45,7 @@ $(function(){
 
     function CarouselSlider() {
         var CarouselSlider = new Swiper('#CarouselSlider', {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
             loop: true,
             speed: 600,
@@ -47,20 +56,20 @@ $(function(){
                     spaceBetween: 22,
                 },
                 750: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 26,
                 },
                 950: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 }
             }
         });
     }
 
     function thumPreview() {
-        setTimeout(function(){
+        setTimeout(function () {
             $(".PreviewImgWrapContent").css("width", $(".viewProductPageTopImg").width());
-        },100)
+        }, 100)
         var thumbSwiper = new Swiper("#previewImgSlider", {
             spaceBetween: 10,
             slidesPerView: 4,
@@ -98,14 +107,14 @@ $(function(){
             thumbSwiper.slideToLoop(realIndex);
         });
         $("#previewImgSlider, #viewImgSlider")
-        .on("mouseenter", function () {
-            mainSwiper.autoplay.stop();
-            thumbSwiper.autoplay.stop();
-        })
-        .on("mouseleave", function () {
-            mainSwiper.autoplay.start();
-            thumbSwiper.autoplay.start();
-        });
+            .on("mouseenter", function () {
+                mainSwiper.autoplay.stop();
+                thumbSwiper.autoplay.stop();
+            })
+            .on("mouseleave", function () {
+                mainSwiper.autoplay.start();
+                thumbSwiper.autoplay.start();
+            });
         setThumbActive(mainSwiper.realIndex);
     }
 
@@ -123,75 +132,82 @@ $(function(){
             const img = container.querySelector("img");
             if (!img) return;
             container.addEventListener("mousemove", (e) => {
-            const { left, top, width, height } = container.getBoundingClientRect();
-            const x = ((e.pageX - left) / width) * 100;
-            const y = ((e.pageY - top) / height) * 100;
+                const { left, top, width, height } = container.getBoundingClientRect();
+                const x = ((e.pageX - left) / width) * 100;
+                const y = ((e.pageY - top) / height) * 100;
 
-            img.style.transformOrigin = `${x}% ${y}%`;
-            img.style.transform = `scale(${scale})`;
+                img.style.transformOrigin = `${x}% ${y}%`;
+                img.style.transform = `scale(${scale})`;
             });
 
             container.addEventListener("mouseleave", () => {
-            img.style.transformOrigin = "center center";
-            img.style.transform = "scale(1)";
+                img.style.transformOrigin = "center center";
+                img.style.transform = "scale(1)";
             });
         });
+    }
+
+    function whatsappMsgGen (ele) {
+        var productName = ele.closest('.viewProductPageInfoWrap').find(".productTitle").text();
+        var message = "Hi, I want to know more about " + productName;
+        var encodedMsg = encodeURIComponent(message);
+        var whatsappLink = "https://wa.me/7200579714?text=" + encodedMsg;
+        ele.closest('.viewProductPageInfoWrap').find(".whatsappBtn").attr("href", whatsappLink);
     }
 
     if ($("#viewPage").length) {
 
         enableImageZoom('.viewProductPageTopImgWrap');
 
-        const productId = getUrlParam("id");
+        const productId = getUrlParam("product");
         if (!productId) {
-            console.error("No product ID found in URL");
             return;
         }
 
-
         $.ajax({
-            url: "https://www.asmasalas.com/js/data.json",
+            url: "/js/data.json",
             dataType: "json",
-            success: function(data) {
+            success: function (data) {
                 const product = data.products.find(p => p.id == productId);
                 if (product) {
 
                     //name,description,recipe
-                    $(".productTitle").text(product.name);
-                    $(".productDesc").text(product.description);
-                    $(".paragraphDesc").text(product.paragraphDesc.replace(/\n/g, "<br>"));
+                    $(".productSinlePageContent .offerBanner .headerTitle").html(product.name);
+                    $(".productTitle").html(product.name);
+                    $(".productDesc").html(product.description);
+                    $(".paragraphDesc").html(product.paragraphDesc.replace(/\n/g, "<br>"));
                     $(".recipe").html(product.recipe.replace(/\n/g, "<br>"));
-                    
+
                     //quantity Btn
                     $(".productQuantityBtnWrap").empty();
-                    product.price.forEach(function(ele){
+                    product.price.forEach(function (ele) {
                         var quantityBtn = `<a class="productQuantityBtn" data-id='${ele.id}'>${ele.weight}</a>`;
                         $(".productQuantityBtnWrap").append(quantityBtn);
                     });
 
                     //Price Value
                     $(`.productQuantityBtn[data-id='${0}']`).addClass("active");
-                    $('.newPrice').text(product.price[0].new);
-                    $('.oldPrice').text(product.price[0].old);
-                    $("body").on("click",".productQuantityBtn",function(){
-                    var eleId = $(this).data("id");
+                    $('.newPrice').html(product.price[0].new);
+                    $('.oldPrice').html(product.price[0].old);
+                    $("body").on("click", ".productQuantityBtn", function () {
+                        var eleId = $(this).data("id");
                         $('.newPrice, .oldPrice').addClass("hide");
-                        setTimeout(function(){
+                        setTimeout(function () {
                             $(`.productQuantityBtn`).removeClass("active");
                             $(`.productQuantityBtn[data-id='${eleId}']`).addClass("active");
-                            $('.newPrice').text(product.price[eleId].new);
-                            $('.oldPrice').text(product.price[eleId].old);
+                            $('.newPrice').html(product.price[eleId].new);
+                            $('.oldPrice').html(product.price[eleId].old);
                             $('.newPrice, .oldPrice').removeClass("hide");
-                        },300);
+                        }, 300);
 
                     });
 
                     //Images
                     $(".viewProductPageTopImgSec").empty();
                     $(".PreviewImgWrap").empty();
-                    product.images.forEach(function(ele){
-                        var mainImg = `<img class="viewProductPageTopImg swiper-slide" src="https://www.asmasalas.com/images/${ele}" ></img>`;
-                        var previewImg = `<img class="PreviewImg swiper-slide" src="https://www.asmasalas.com/images/${ele}" ></img>`;
+                    product.images.forEach(function (ele) {
+                        var mainImg = `<img class="viewProductPageTopImg swiper-slide" src="/images/${ele}" ></img>`;
+                        var previewImg = `<img class="PreviewImg swiper-slide" src="/images/${ele}" ></img>`;
 
                         $(".viewProductPageTopImgSec").append(mainImg);
                         $(".PreviewImgWrap").append(previewImg);
@@ -199,7 +215,7 @@ $(function(){
 
                     //Ingredients
                     $(".ingredientsList").empty();
-                    product.ingredientsList.forEach(function(ele){
+                    product.ingredientsList.forEach(function (ele) {
                         var li = `<li>${ele}</li>`;
                         $(".ingredientsList").append(li);
                     });
@@ -208,14 +224,19 @@ $(function(){
                     console.error("Product not found for ID:", productId);
                 }
             },
-            error: function(xhr, status, error) {
+            error: function (xhr, status, error) {
                 console.error("Error loading JSON:", status, error);
             },
-            complete: function(){
+            complete: function () {
                 thumPreview();
-                $(window).on("resize",function(){
+                $(window).on("resize", function () {
                     thumPreview();
                 });
+                if ($('.whatsappBtn').length) {
+                    $('.whatsappBtn').each(function(){
+                        whatsappMsgGen($(this));
+                    });
+                }
             }
         });
     }
