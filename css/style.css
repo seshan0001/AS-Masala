@@ -290,12 +290,18 @@ a.headerMenuItem:hover {
 
 .logoWrap {
     width: 85px;
+    height: 85px;
     background-color: var(--lightWhite);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.logoWrap img {
+    width: 50%;
+    height: 50%;
 }
 
 .textWithImage.leftToRight .textWithImageWrap {
